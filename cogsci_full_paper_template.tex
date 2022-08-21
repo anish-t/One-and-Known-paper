@@ -61,6 +61,9 @@
   Allahabad 211002 India
   \AND {\large \bf Nisheeth Srivastava (nsrivast@iitk.ac.in)} \\
   Department of Computer Science, IIT Kanpur\\
+  Kanpur 208016 India
+  \AND {\large \bf Anish Thankachan (anisht21@iitk.ac.in)} \\
+  Department of Cognitive Science, IIT Kanpur\\
   Kanpur 208016 India}
 
 \begin{document}
@@ -69,7 +72,7 @@
 
 
 \begin{abstract}
-We test whether people are able to reason based on incidentally acquired probabilistic and context-specific magnitude information. We manipulated variance of values drawn from two normal distributions as participants perform an unrelated counting task. Our results show that people do learn category-specific information incidentally, and that the pattern of their judgments is broadly consistent with normative Bayesian reasoning at the cohort level, but with large individual-level variability. We find that this variability is explained well by a frugal memory sampling approximation; observer models making this assumption explain approximately 70\% of the variation in participants' responses. We also find that behavior while judging easily discriminable categories is  consistent with a model observer drawing fewer samples from memory,  while behavior while judging less discriminable categories is better fit by models drawing more samples from memory. Thus, our model-based analysis additionally reveals resource-rationality in memory sampling.
+We test whether people are able to reason based on incidentally acquired probabilistic and context-specific magnitude information. We manipulated variance of values drawn from two normal distributions as participants perform an unrelated counting task. Our results show that people do learn category-specific information incidentally, and that the pattern of their judgments is broadly consistent with normative Bayesian reasoning at the cohort level, but with large individual-level variability. We find that this variability is explained well by a frugal memory sampling approximation; observer models making this assumption explain approximately 70\% of the variation in participants' responses. We also find that behavior while judging easily discriminable categories is consistent with a model observer drawing fewer samples from memory,  while behavior while judging less discriminable categories is better fit by models drawing more samples from memory. Thus, our model-based analysis additionally reveals resource-rationality in memory sampling. Finally, we also show that such incidental learning vanishes in the absence of prior knowledge about the relative positions of underlying distributions.
 
 %\keywords{Bayesian cognitive science; value; mental representations}
 
@@ -79,7 +82,7 @@ We test whether people are able to reason based on incidentally acquired probabi
 
 Statistical inference offers a compelling normative criterion for human judgments during perception and action. Strong evidence of probabilistic reasoning is available for perceptual judgments~\cite{ernst2002humans} and sensorimotor control~\cite{kording2004bayesian}, wherein human performance in cue integration tasks has been shown to closely follow normative Bayesian principles~\cite{pouget2013probabilistic}. There is also some evidence suggesting how Bayesian updates for such settings could be carried out by populations of neurons~\cite{ma2006bayesian}.
 
-Similar normative claims have also been advanced for human cognition, supported by evidence from a a wide variety of cognitive tasks~\cite{oaksford2007bayesian, tenenbaum2011grow}.
+Similar normative claims have also been advanced for human cognition, supported by evidence from a wide variety of cognitive tasks~\cite{oaksford2007bayesian, tenenbaum2011grow}.
 However, critics contend that Bayesian analysis offers too many degrees of freedom to the analyst in the design of appropriate priors and likelihood, such that empirical fits with data can often be attributed to environmental and psychological properties embedded in the design of these entities~\cite{jones2011bayesian}. 
 
 Properties of the environment and biophysical embodiment can strongly constrain the nature of priors in perceptual and motor control tasks and some language-related cognitive tasks. However, it is harder to produce such constraints for cognitive tasks wherein embodiment is weakly involved and environmental statistics are variable. For instance, to accept ~\citeA{griffiths2006optimal}'s contention that humans are Bayes-optimal in making commonplace probability judgments, we must believe that people {\em incidentally} keep track of the distribution of a large variety of real-world events. Similarly, to accept the explanation for risk aversion offered in ~\citeA{stewart2006decision}'s decision-by-sampling theory, we must believe that people incidentally track the distribution of money magnitudes. 
@@ -88,7 +91,7 @@ While there is some evidence that people track incidental frequencies well~\cite
 
 In summary, while there is considerable evidence to support the case that humans reason probabilistically given an understanding of the appropriate generative model of the world, it is less clear how they are {\em incidentally} able to acquire and update these generative models and apply them to novel situations. In this study, we tested peoples' ability to {\em incidentally} learn about context-specific distributions of magnitudes, and reason with them retrospectively. We analyzed participants' behavior with observer models fitted to observations that participants saw during {\em incidental} learning to characterize the nature of mental representations used in this retrospective probabilistic reasoning task.
 
-\section{Experiment}
+\section{Experiment 1}
 
 %We tested the observer model's predictions by manipulating variance of the sequentially observed value distribution between subjects.
 
@@ -139,7 +142,7 @@ During the training phase conducted earlier, participants were unaware that they
 
 \subsection{Analysis and Results}
 
-We fit each participant's responses from the testing phase with  a psychometric function,$\gamma +\frac{\lambda - \gamma }{1 + (\frac{x}{c})^{\beta}}$ using the curve fitting toolbox in MATLAB. Here $\gamma$ was the lower asymptote of the psychometric curve, $\lambda$ was the upper asymptote, \textit{c} was the inflexion point of the curve and $\beta$ was the steepness or the slope of the curve. To fit the curves, we converted Likert ratings to probability judgements by using a recently validated mapping of verbal labels to assigned probabilities \cite{hancock2020quantifying}\footnote{Specifically, we mapped our 7-point Likert scale with labels [very unlikely, unlikely, somewhat unlikely, undecided, somewhat likely, likely, very likely] to the numbers [0.05, 0.20, 0.35, 0.50, 0.60, 0.70, 0.90] respectively.}.
+We fit each participant's responses from the testing phase with  a psychometric function,$\gamma +\frac{\lambda - \gamma }{1 + (\frac{x}{c})^{\beta}}$ using the curve fitting toolbox in MATLAB. Here $\gamma$ was the upper asymptote of the psychometric curve, $\lambda$ was the lower asymptote, \textit{c} was the inflexion point of the curve and $\beta$ was the steepness or the slope of the curve. To fit the curves, we converted Likert ratings to probability judgements by using a recently validated mapping of verbal labels to assigned probabilities \cite{hancock2020quantifying}\footnote{Specifically, we mapped our 7-point Likert scale with labels [very unlikely, unlikely, somewhat unlikely, undecided, somewhat likely, likely, very likely] to the numbers [0.05, 0.20, 0.35, 0.50, 0.60, 0.70, 0.90] respectively.}.
 
 %The average $R^2$ value for the fit was 0.81. [for which VF condition?]
 
@@ -161,7 +164,7 @@ We fit each participant's responses from the testing phase with  a psychometric 
 %}
 %\end{table}
 
-We ran a between subject Bayesian ANOVA with three conditions of variance (high, medium, low) for all four parameters in JASP (0.13.1.0) with a default cauchy prior. The alternate hypothesis that variance conditions would change the slopes ($\beta$) of the fitted curves had strong evidence (\textit{BF\textsubscript{10}} = 7771000, error\% = 0.001). Our Post-hoc tests for the same showed that the slopes of the fitted curves for participants in the low variance group were more likely to be higher than the those in the medium (posterior odds = 66391,  \textit{BF\textsubscript{10U}} = 113025) and high variance group (posterior odds = 1054,  \textit{BF\textsubscript{10U}} = 1795), while we found no evidence either way for difference in slopes for medium and high variance groups (posterior odds = 1.3,  \textit{BF\textsubscript{10U}} = 2.28). See figure 2 for the slope differences between the groups. There was weak to moderate evidence for the null for inflexion point (\textit{BF} = 3.39) and lower bound (\textit{BF} = 6.26), and inconclusive evidence (\textit{BF} = 0.53) for the upper bound.
+We ran a between subject Bayesian ANOVA with three conditions of variance (high, medium, low) for all four parameters in JASP (0.13.1.0) with a default cauchy prior. The alternate hypothesis that variance conditions would change the slopes ($\beta$) of the fitted curves had strong evidence (\textit{BF\textsubscript{10}} = 7771000, error\% = 0.001). Our Post-hoc tests for the same showed that the slopes of the fitted curves for participants in the low variance group were more likely to be higher than the those in the medium (posterior odds = 66391,  \textit{BF\textsubscript{10U}} = 113025) and high variance group (posterior odds = 1054,  \textit{BF\textsubscript{10U}} = 1795), while we found no evidence either way for difference in slopes for medium and high variance groups (posterior odds = 1.3,  \textit{BF\textsubscript{10U}} = 2.28). See Figure \ref{fig:my_label} for the slope differences between the groups. There was weak to moderate evidence for the null for inflexion point (\textit{BF} = 3.39) and lower bound (\textit{BF} = 6.26), and inconclusive evidence (\textit{BF} = 0.53) for the upper bound.
 
 
 \begin{figure}[h!]
@@ -175,11 +178,94 @@ We ran a between subject Bayesian ANOVA with three conditions of variance (high,
 
 Psychometric analysis of the data supports the hypothesis that the spread of the distribution of numerical observations during training will affect the posterior probability of category judgments elicited during the surprise testing phase. While our experiment is set up to determine whether people can reason with numerical quantities acquired via experience in a Bayesian manner, it can also be viewed as a categorization task. We show observers instances of two categories - cheap and expensive restaurants, and then (stochastically) ask them to classify new instances into one of them. The fact that greater within-category variance makes categorization more challenging is well-documented for both supervised~\cite{alfonso2002makes} and unsupervised category learning~\cite{kloos2008s}. It is also modeled quite well by classic computational models of categorization~\cite{fried1984induction, anderson1991adaptive}. 
 
-However, {\em incidental} category learning of the nature we find here has not been documented previously. Participants in our experiment were asked to audit bills for totalling mistakes during training, and were not given feedback about their responses during testing nor did they know that a testing phase would follow. Given the retrospective nature of the design, participants did not know that they had to learn or memorize the values for different category labels. Studies showing successful unsupervised learning of categories tend to use highly separated categories, and any increase in within category variance tends to make category learning very hard even given 100s of training trials~\cite{ell2012impact}. Viewed in this light, the fact that people are able to {\em incidentally} learn categories in this task from 30 examples per category is significant\footnote{See Experiment 4 in ~\citeA{fried1984induction} for a historical example of surprising incidental learning of category structure.}.Our primary interest in this experiment is to characterize the extent to which participants' behavior can be explained by a Bayesian observer model, which is described in the next section. 
+However, {\em incidental} category learning of the nature we find here has not been documented previously. Participants in our experiment were asked to audit bills for totalling mistakes during training, and were not given feedback about their responses during testing nor did they know that a testing phase would follow. Given the retrospective nature of the design, participants did not know that they had to learn or memorize the values for different category labels. Studies showing successful unsupervised learning of categories tend to use highly separated categories, and any increase in within category variance tends to make category learning very hard even given 100s of training trials~\cite{ell2012impact}. Viewed in this light, the fact that people are able to {\em incidentally} learn categories in this task from 30 examples per category is significant\footnote{See Experiment 4 in ~\citeA{fried1984induction} for a historical example of surprising incidental learning of category structure.}.
+
+
+
+\section{Experiment 2}
+
+%We tested the observer model's predictions by manipulating variance of the sequentially observed value distribution between subjects.
+
+Positive results from the previous experiment led us to test the limits of such {\em incidental} learning. We wished to see if the prior knowledge about the relative positions of these distributions (acquired through the nomenclature - 'cheap' and 'expensive') played a role in such learning. To test this, we designed a variation of previous experiment where participants were asked to assume the role of tax auditors and check a company's supply procurement bills for tax compliance. These bills were mentioned as being from either “Preston Industrial” or “Newell Manufacturing” companies (to make these company names non-informative about their distribution's relative means, we chose common nouns as company names). Participants had to check for correct total (sum of all items' cost) and tax values (tax values had to be more than or equal to 10\% of the sum of the items' cost). This simple arithmetic task allowed us to expose participants to the values of the items on the bills, ensuring they paid attention to them while remaining naive to the true purpose of the experiment. 
+	
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.45\textwidth]{results/Sample_bill_newell.png}
+	\caption{Sample bill presented in the training phase of the experiment 2.}
+	\label{fig:design2}
+\end{figure}
+
+There were two phases in the experiment: {\em training} and {\em testing}. During training, participants were shown a number of supply procurement bills (see sample bill in Figure \ref{fig:design2}). Each bill had three items listed with money values. These bills were explicitly identified as being from either “Preston Industrial” or “Newell Manufacturing” companies. Company category had no bearing on the auditing task. The items were denominated in a fictional foreign currency to reduce the influence of participants' prior knowledge of money magnitudes in this context. 
+
+The training phase was meant to instantiate the value distributions $p(money|context)$ and the probability of context occurrence $p(context)$ in participants. During the testing phase, on every trial, participants were presented with an item alongside its price, and asked to assess how likely it was that the item came from “Newell Manufacturing” company, thus asking them to express $p(context|money)$.
+
+%We tested whether the variance of the likelihood function would alter participants' posterior responses. The Bayesian observer model predicts that increasing variance would lead to increased confusion in classifying and discriminating between two value distributions~\cite{srivastava2014magnitude}.
+
+\subsection{Participants}
+The study was conducted using a web interface. A total of 88 (mean age = 25.1years, females = 21) participants completed the experiment. Eight participants with poor performance (less than 80\% accuracy) in the training phase were excluded from the study. 10 Participants who responded with identical responses for all the test phase problems were also excluded from analysis resulting in 70 participants. 
+
+\subsection{Stimuli}
+In the training phase of the experiment, we showed participants values drawn from two normal distributions. Values from each distribution were shown as bills from companies with two category labels, “Preston Industrial” and “Newell Manufacturing” (See Figure \ref{fig:design2}). We manipulated the variance (low, medium, high) of these distributions between participants with number of participants being 27, 24 and 19 respectively. Each company label had their own distribution and we scaled the variance by the mean (fixed means for “Preston Industrial” = 1600 and “Newell Manufacturing” = 2900, scaling variance factors: low = 0.25, medium = 0.5 and high = 0.7).  
+
+%\begin{table}[]
+%    \centering
+%    \begin{tabular}{c|c|c|c}
+%    \hline
+%    Experiment & Mean (cheap, expensive) & Mean scaled variance factor & Skewness\\
+%    \hline
+%         1 & 1600, 2900 & 0.25, 0.5, 0.7 & 0  \\
+%         2 & 1600, 2900 & 0.5, & 0\\
+%         3 & 1000, 1600 & 0.5 & 4,-4; -4,4\\
+%    \end{tabular}
+%    \caption{Mean, variance and skewness values of the distributions used to generate cheap and expensive restaurant item values}
+%    \label{tab:my_label}
+%\end{table}
+
+\subsection{Procedure}
+Procedure for training and testing phases were similar to that of experiment 1.	
+
+\subsection{Analysis and Results}
+As with the previous experiment we fit each participant's responses from the testing phase with  a psychometric function,$\gamma +\frac{\lambda - \gamma }{1 + (\frac{x}{c})^{\beta}}$ using the curve fitting toolbox in MATLAB. 
+
+%The average $R^2$ value for the fit was 0.81. [for which VF condition?]
+
+%\begin{table}[htb]
+%\caption{The table lists our conversion from Likert ratings to assigned probabilities.}
+%\label{tab:my-table}
+%\resizebox{\columnwidth}{!}{%
+%\begin{tabular}{|l|l|}
+%\hline
+%Likert Ratings        & Assigned Probability \\ \hline
+%1 = Very Unlikely     & 0.05                 \\ \hline
+%2 = Unlikely          & 0.2                  \\ \hline
+%3 = Somewhat Unlikely & 0.35                 \\ \hline
+%4 = Undecided         & 0.5                  \\ \hline
+%5 = Somewhat Likely   & 0.6                  \\ \hline
+%6 = Likely            & 0.7                  \\ \hline
+%7 = Very Likely       & 0.9                  \\ \hline
+%\end{tabular}%
+%}
+%\end{table}
+
+Bayesian one sample T-test on the slopes ($\beta$) of the fitted curves had moderate evidence in favour of null hypothesis (\textit{BF\textsubscript{01}} = 5.244, error\% = 0.078) that population mean of slope parameter does not differ from 0. We also ran a between subject Bayesian ANOVA with three conditions of variance (high, medium, low) for all four parameters in JASP (0.16.3) with a default uniform prior. The null hypothesis that variance conditions would not change the slopes ($\beta$) of the fitted curves had moderate evidence (\textit{BF\textsubscript{01}} = 7.833, error\% = 0.026). See Figure \ref{fig:my_label2} for the slope differences between the groups. There was weak to moderate evidence in favour of null for inflexion point (\textit{BF\textsubscript{01}} = 3.452), for the lower bound (\textit{BF\textsubscript{01}} = 3.921), and for the upper bound(\textit{BF\textsubscript{01}} = 4.180) .
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{results/slope_CS.pdf}
+    \caption{Psychometric function fit using averages of parameters estimated for participants in experiment 2 for all three variance conditions. Shading indicates 95\% CI for slope parameter estimates. Dashed and dotted lines indicate mean and SD (one line per condition) for the three 'expensive' and 'cheap' distributions respectively. The color for the shading and dotted lines indicates the three variance conditions.}
+    \label{fig:my_label2}
+\end{figure}
+
+\subsection{Discussion}
+Psychometric analysis of the data from experiment 2 shows that the posterior probability of category judgments elicited during the surprise testing phase is not depended on the monetary values provided as inputs, due to lack of evidence for a non-zero value for slope parameter as shown in the Bayesian T-test. This 
+suggests that participants were unable to learn the context specific distributions that they were exposed to during the training phase. And this is the case for any amount of spread of the distribution during training phase as indicated by ANOVA run on three variance conditions. Even viewing this as a categorisation task with two labels, the participants data from testing phase shows a random chance of selecting the correct category label (See Figure \ref{fig:my_label2}). And same is true for individual variance conditions as well.
+This indicates that a lack of context specific anchors during the training phase impedes the sort of {\em incidental} learning that is elicited in experiment 1, and participants are unable to logically infer the underlying generative distributions.
+
+
 
 \section{Ideal observer model}
-
-Our observer model is straightforward. From the behavioral results, it is evident that people are able to significantly track the joint distribution $p(K,Y)$, where $K$ is a discrete random variable indexing restaurant category and $Y$ is a continuous random variable indexing natural numbers corresponding to money magnitudes in our experiment. In the testing phase, participants are asked to express $p_{K|Y}(k|y)$, the conditional probability of $k$, given any particular numerical magnitude $y$.  
+Our primary interest here is to characterize the extent to which participants' behavior can be explained by a Bayesian observer model. Our observer model is straightforward. From the behavioral results of experiment 1, it is evident that people are able to significantly track the joint distribution $p(K,Y)$, where $K$ is a discrete random variable indexing restaurant category and $Y$ is a continuous random variable indexing natural numbers corresponding to money magnitudes in our experiment. In the testing phase, participants are asked to express $p_{K|Y}(k|y)$, the conditional probability of $k$, given any particular numerical magnitude $y$.  
 
 The ideal observer will construct this quantity using Bayes rule as follows,
 \begin{equation}
@@ -261,13 +347,15 @@ We model the $y|k$ update as sequential inference about a Gaussian with unknown 
 
 \section{Model-based Analysis}
 
-As~\citeA{jones2011bayesian} point out, it is important to justify the psychological assumptions embedded in Bayesian models to truly bring them into alignment with reality. In the context of our task, the ideal observer assumes that, when asked to express a probability judgment about category membership, a human constructs this belief by retrieving all 60 training samples from memory to update their generative model. Therefore, for our model-based analysis, we also consider two frugal alternatives to this baseline observer model,
+As~\citeA{jones2011bayesian} point out, it is important to justify the psychological assumptions embedded in Bayesian models to truly bring them into alignment with reality. In the context of our task, the ideal observer assumes that, when asked to express a probability judgment about category membership, a human constructs this belief by retrieving all 60 training samples from memory to update their generative model. Therefore, for our model-based analysis, we also consider four frugal alternatives to this baseline observer model,
 \begin{enumerate}
     \item inspired by prototype models of categorization~\cite{fried1984induction, minda2001prototypes}, we consider a {\em prototype} observer model which assumes that people retrieve the mean of category distributions observed during training phase, and update an abstract generative model of world situations like the given task with just this pair of mental observations while constructing probability judgments in our task. 
-    \item inspired by recent Bayesian sampling proposals~\cite{sanborn2016bayesian, zhu2020bayesian}, we consider a memory {\em sampling} extension of the prototype observer model, which assumes that people either encode or retrieve a subset of training phase observations to construct prototypes, which are then used to construct probability judgments as in the prototype observer model. 
+    \item inspired by recent Bayesian sampling proposals~\cite{sanborn2016bayesian, zhu2020bayesian}, we consider a memory {\em sampling} extension of the {\em prototype} observer model, which assumes that people either encode or retrieve a subset of training phase observations to construct prototypes, which are then used to construct probability judgments as in the prototype observer model. 
+    \item next we consider a memory {\em sampling}  observer model, which assumes that people either encode or retrieve a subset of training phase observations. But instead of constructing prototypes with these, the samples are used to sequentially update the generative model, which is then used to construct probability judgments as in the ideal observer model. 
+    \item we also consider an extension of memory {\em sampling}  observer model, which assumes primacy and recency (PR) effects when people encode or retrieve a subset of training phase observations. The PR effects are modelled with beta priors (with shape parameters $\alpha , \beta \le 0.5$). These samples are used to sequentially update the generative model, which is then used to construct probability judgments during testing phase.
 \end{enumerate}
 
-We first analyzed all three models' ability to account for our data with a single set of pooled hyperparameters estimated across all participants. We fit the observer models to data by giving it sequential access to 60 original observations seen by each participant during their training phase in each of the three conditions and then using these three condition-specific trained models to predict posterior probabilities for the 40 observations seen by participants during the test phase. We obtained max likelihood estimates for all parameters, and calculated BIC scores for all models' predictions compared with our data. Since the posteriors emitted by the sampling observers vary because of the stochastic nature of their likelihoods, we report median BIC scores obtained across 100 simulations each for these two models. 
+We first analyzed all five models' ability to account for our data from experiment 1 with a single set of pooled hyperparameters estimated across all participants. We fit the observer models to data by giving it sequential access to 60 original observations seen by each participant during their training phase in each of the three conditions and then using these condition-specific trained models to predict posterior probabilities for the 40 observations seen by participants during the test phase. We obtained max likelihood estimates for all parameters, and calculated BIC scores for all models' predictions compared with our data. Since the posteriors emitted by the sampling models (sampling prototype, sampling and sampling PR) vary because of the stochastic nature of their likelihoods, we report median BIC scores obtained across 100 simulations each for these three models. 
 
 \begin{table}[]
     \centering
@@ -275,39 +363,80 @@ We first analyzed all three models' ability to account for our data with a singl
     \hline
          Model/VF & 0.25 & 0.5 & 0.7 \\
          \hline
-         Ideal & -3352 & -3241 & -3093 \\
-         Prototype & -3057 & -3498 & -3476 \\
-         Sampling & -3204 (5) & -3637 (5) & -3614 (6) \\
+         Ideal & -3096 & -3448 & -3310 \\
+         Prototype & -2591 & -3046 & -3162 \\
+         Sampling Prototype & -2754 (2) & -3199 (5) & -3311 (6) \\
+         Sampling & -3478 (3) & -3451 (6) & -3243 (6) \\
+         Sampling PR & -3391 (3) & -3383 (6) & -3187 (7) \\
          \hline 
     \end{tabular}
-    \caption{BIC scores for observer models fit condition-wise. SEM across multiple runs reported in brackets. All results rounded to integers.}
+    \caption{BIC scores for observer models fit condition-wise for experiment 1. SEM across multiple runs reported in brackets. All results rounded to integers.}
     \label{tab:bic}
 \end{table}
 
-Both the alternative models are clearly superior to the ideal observer across high variance training conditions. Interestingly, overall the sampling observer explains the data better than the ideal observer, as measured by BIC. Thus, in an empirical sense at least, it is evident that observers that compress incoming magnitude information into category prototype representations are better models for participants' judgments in our task than fully Bayesian observers with perfectly individuated memory of exemplars. The high correspondence between the prototype model and our data (absolute goodness-of-fit $RMSE=0.1475$ across all three conditions) suggests that human observers possess a normatively appropriate generative model applicable for the task we asked them to do retrospectively and invert it to obtain situation-specific probabilistic judgments by drawing a few samples of past observations from memory.  
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{|c|c|c|c|}
+%     \hline
+%          Model/VF & 0.25 & 0.5 & 0.7 \\
+%          \hline
+%          Ideal & -3311 & -3100 & -2520 \\
+%          Prototype & -3216 & -3052 & -2411 \\
+%          Sampling Prototype & -3279 (1) & -3051 (2) & -2472 (1) \\
+%          Sampling & -3287 (2) & -3142 (2) & -2496 (2) \\
+%          Sampling PR & -3201 (2) & -3058 (3) & -2419 (2) \\
+%          \hline 
+%     \end{tabular}
+%     \caption{BIC scores for observer models fit condition-wise for experiment 2. SEM across multiple runs reported in brackets. All results rounded to integers.}
+%     \label{tab:bic2}
+% \end{table}
 
-We next considered model fits with hyperparameters estimated at the per participant level. Figure~\ref{fig:Figure_4}A-B summarizes goodness-of-fit for the ideal observer making predictions on the observations seen by each participant during the test phase. Panel A plots the model's predicted posterior distribution $p_{K|Y}$ against one participant's probabilistic responses. Panel B summarizes median goodness-of-fit, quantified using adjusted $R^2$ obtained for participants, training the model using the same values as observed during the training phase by each participant in a given condition, and setting hyperparameters for each participant using max likelihood estimation. The results suggest that the ideal observer models variability in individuals' responses for easier discrimination judgments reasonably, but is increasingly less effective in modeling variability in responses for harder discriminations. 
+Both the alternative sequential sampling models are clearly superior to the ideal observer across low variance training conditions. Interestingly, overall the sampling and sampling PR observer models explains the data better than the ideal observer, as measured by BIC. Thus, in an empirical sense at least, it is evident that observers that compress incoming magnitude information into category prototype representations are better models for participants' judgments in our task than fully Bayesian observers with perfectly individuated memory of exemplars. The high correspondence between the sampling models and our data (absolute goodness-of-fit $RMSE=0.15$ across all three conditions) suggests that human observers possess a normatively appropriate generative model applicable for the task we asked them to do retrospectively and invert it to obtain situation-specific probabilistic judgments by drawing a few samples of past observations from memory.  
+
+We next considered model fits with hyperparameters estimated at the per participant level. Figure~\ref{fig:Consolidated_performance}A-B summarizes goodness-of-fit for the ideal observer making predictions on the observations seen by each participant during the test phase. Panel A plots the model's predicted posterior distribution $p_{K|Y}$ against one participant's probabilistic responses. Panel B summarizes median and mean goodness-of-fit, quantified using adjusted $R^2$ obtained for participants, training the model using the same values as observed during the training phase by each participant in a given condition, and setting hyperparameters for each participant using max likelihood estimation. The results suggest that the ideal observer models variability in individuals' responses for easier discrimination judgments reasonably, but is increasingly less effective in modeling variability in responses for harder discriminations. 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.4\textwidth]{results/Figure_4.png}
-    \caption{Ideal observer model (A) fit to one participant's data, and (B) median goodness-of-fit measured across all participants by condition. Median goodness of fit for a (C) prototype observer model and a (D) sampling observer model. Error bars represents $\pm 1$ s.e.m.} 
-    \label{fig:Figure_4}
+    \includegraphics[width=0.48\textwidth]{results/Consolidated_performance.pdf}
+    \caption{Ideal observer model (A) fit to one participant's data from experiment 1, and (B) median and mean goodness-of-fit measured across all participants by condition. Median/mean goodness of fit for (C) prototype observer model, (D) sampling prototype observer model, (E) sampling observer model, (F) sampling observer model considering primacy and recency effects (PR) for experiment 1. Error bars represents $\pm 1$ s.e.m.} 
+    \label{fig:Consolidated_performance}
 \end{figure}
-
-Figure~\ref{fig:Figure_4}C-D summarizes goodness-of-fit for these two observer models. Overall, they afford better descriptions of individuals' data than the ideal observer model, because of the extra modeling flexibility afforded them by the introduction of two (prototype model - both prototype values) and one (sampling model - sample count) additional parameters. 
-
-An additional analysis of the sampling observer model affords additional insight into peoples' behavior. Figure \ref{fig:meta_sampling} plots adjusted $R^2$ values across all participants achieved by sampling models restricted to drawing a fixed number of observations from memory per category. The value reported in the graph is the median of 100 runs of the model for each sample count level to account for the stochasticity of memory sampling. We see that the model's ability to explain behavioral variation for participants exposed to high variance training distributions continues to improve with the number of additional samples permitted. However, interestingly, drawing as few as one to two samples per category is already sufficient for the sampling observer model to explain more than 60\% of the variance in peoples' behavior if they were assigned to the low variance training condition.   
-
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.4\textwidth]{results/meta_sampling.pdf}
-    \caption{Median sampling observer model $R^2$ measured across 100 iterations each for different counts of observations sampled. Iteration $R^2$ value is calculated as the average $R^2$ of models with that sample count fit to each participants' data. Error bars show average 1 s.e.m. across iterations.}
-    \label{fig:meta_sampling}
+    \includegraphics[width=0.48\textwidth]{results/Consolidated_performance_CS.pdf}
+    \caption{Ideal observer model (A) fit to one participant's data from experiment 2, and (B) median and mean goodness-of-fit measured across all participants by condition. Median/mean goodness of fit for (C) prototype observer model, (D) sampling prototype observer model, (E) sampling observer model, (F) sampling observer model considering primacy and recency effects (PR) for experiment 2. Error bars represents $\pm 1$ s.e.m.} 
+    \label{fig:Consolidated_performance2}
 \end{figure}
 
-The general trend seen in Figure~\ref{fig:meta_sampling} suggests that people might be constructing prototypes using fewer samples from memory for categories that are less confusable, and more samples for categories that are more confusable. This pattern is consistent with people performing resource-rational memory sampling - drawing fewer samples from memory to construct prototypes needed to discriminate easily discriminable categories, and drawing more samples to construct prototypes needed to discriminate less discriminable categories. Resource-rational meta-reasoning has several attractive theoretical properties~\cite{griffiths2015rational}, but opinion remains divided on the extent to which such resource-rationality is simply a metaphor to add greater flexibility to Bayesian models~\cite{rahnev2020resource}, or whether it can be shown to have stronger ontic commitments~\cite{griffiths2015rational}. The pattern of meta-reasoning in Figure~\ref{fig:meta_sampling} supports the consideration of sampling as a concrete operationalization of resource-rationality for Bayesian models of cognition~\cite{srivastava2014frugal, sanborn2016bayesian}. 
+Figure~\ref{fig:Consolidated_performance}C-D summarizes goodness-of-fit for two prototype observer models (prototype and sampling prototype). While figure~\ref{fig:Consolidated_performance}E-F shows the goodness-of-fit for two sequential sampling observer models (sampling and sampling pr). Even by considering only a subset of training data, overall they afford at par descriptions of individuals' data when compared to the ideal observer model, because of the extra modeling flexibility afforded to them by the introduction of one (sampling model - sample count) and two (sampling pr model - sample count and primacy/recency prior) additional parameters. 
+
+While on the other hand, none of the observers models could explain the variations in participant responses from testing phase of experiment 2, as shown in figure~\ref{fig:Consolidated_performance2} where hyperparameters are estimated at the per participant level, to get median and mean goodness-of-fit for all five model fits across the three spread conditions. This is because the participants were unable to infer the category distributions from the training examples provided to them. And their testing phase responses for this experiment were essentially random in nature, therefore these could not be predicted reliably by any of our models.  
+
+
+Further analysis of the sampling models (sampling prototype, sampling and sampling PR) affords additional insight into peoples' behavior. Figure \ref{fig:meta_r2_performance_upd} plots adjusted $R^2$ values across all participants achieved by sampling models restricted to drawing a fixed number of observations from memory per category. The value reported in the graph is the median of 100 runs of the model for each sample count level to account for the stochasticity of memory sampling. We see that the model's ability to explain behavioral variation for participants exposed to high variance training distributions continues to improve with the number of additional samples permitted. However, interestingly, drawing as few as one to two samples per category is already sufficient for the sequential sampling observer models to explain more than 60\% of the variance in peoples' behavior if they were assigned to the low variance training condition.   
+
+
+But we see no such explanatory powers with any of our models for data from experiment 2. (See Figure \ref{fig:meta_r2_performance_upd2}). Even when the observer models are provided with almost all the data points that participants saw during their training phase, it is unable to predict peoples' behavior in any variance condition. This inability to explain the variance in participant's data, as stated earlier can be attributed to the random nature of their responses during testing phase.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.48\textwidth]{results/meta_r2_performance_itr_upd.pdf}
+    \caption{For experiment 1 - (A) sampling prototype observer model, (B) sampling observer model, (C) sampling observer model considering primacy and recency effects (PR). For each count of observations sampled, median model $R^2$ values measured for each participants' data across 100 iterations are reported. Error bars show 1 s.e.m. across participants and iterations.}
+    \label{fig:meta_r2_performance_upd}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.48\textwidth]{results/meta_r2_performance_itr_upd_CS.pdf}
+    \caption{For experiment 2 - (A) sampling prototype observer model, (B) sampling observer model, (C) sampling observer model considering primacy and recency effects (PR). For each count of observations sampled, median model $R^2$ values measured for each participants' data across 100 iterations are reported. Error bars show 1 s.e.m. across participants and iterations.}
+    \label{fig:meta_r2_performance_upd2}
+\end{figure}
+
+%    \includegraphics[width=0.4\textwidth]{results/meta_r2_performance_itr_upd.png}
+%    \caption{(A) sampling prototype observer model, (B) sampling observer model, (C) sampling observer model considering primacy and recency effects (PR). Median model $R^2$ measured across 100 iterations each for different counts of observations sampled. Iteration $R^2$ value is calculated as the average $R^2$ of models with that sample count fit to each participants' data. Error bars show average 1 s.e.m. across iterations.}
+
+The general trend seen in Figure~\ref{fig:meta_r2_performance_upd} suggests that people might be encoding or retrieving fewer samples from memory for categories that are less confusable, and more samples for categories that are more confusable. This pattern is consistent with people performing resource-rational memory sampling - drawing fewer samples from memory to discriminate easily discriminable categories, and drawing more samples to discriminate less discriminable categories. Resource-rational meta-reasoning has several attractive theoretical properties~\cite{griffiths2015rational}, but opinion remains divided on the extent to which such resource-rationality is simply a metaphor to add greater flexibility to Bayesian models~\cite{rahnev2020resource}, or whether it can be shown to have stronger ontic commitments~\cite{griffiths2015rational}. The pattern of meta-reasoning in Figure~\ref{fig:meta_r2_performance_upd} supports the consideration of sampling as a concrete operationalization of resource-rationality for Bayesian models of cognition~\cite{srivastava2014frugal, sanborn2016bayesian}. 
 
 % would be a stronger conclusion if we included the analysis in the paragraph below.
 
@@ -315,9 +444,9 @@ The general trend seen in Figure~\ref{fig:meta_sampling} suggests that people mi
 
 
 \section{General Discussion}
-We make three contributions in this paper. One, we present empirical evidence of incidental supervised category learning from very few observations, consistent with a long-standing assumption in Bayesian cognitive science that people intuitively even when not explicitly motivated store important statistical information about events in the world~\cite{griffiths2006optimal, stewart2006decision}. Two, we demonstrate using computational modelling, that humans' behavior in tests of incidental category learning are consistent with the behavior of a Bayesian observer that samples a subset of event observations from memory to construct probability judgments~\cite{srivastava2014frugal, zhu2020bayesian}. Three, we find that behavior while judging easily discriminable categories is consistent with a model observer drawing fewer samples from memory, while behavior while judging less discriminable categories is better fit by models drawing more samples. These observations are consistent with theoretical expectations of resource-rationality in memory sampling~\cite{griffiths2015rational, sanborn2016bayesian}.
+We make four contributions in this paper. One, we present empirical evidence of incidental supervised category learning from very few observations, consistent with a long-standing assumption in Bayesian cognitive science that people intuitively even when not explicitly motivated store important statistical information about events in the world~\cite{griffiths2006optimal, stewart2006decision}. Two, we demonstrate using computational modelling, that humans' behavior in tests of incidental category learning are consistent with the behavior of a Bayesian observer that samples a subset of event observations from memory to construct probability judgments~\cite{srivastava2014frugal, zhu2020bayesian}. Three, we find that behavior while judging easily discriminable categories is consistent with a model observer drawing fewer samples from memory, while behavior while judging less discriminable categories is better fit by models drawing more samples. These observations are consistent with theoretical expectations of resource-rationality in memory sampling~\cite{griffiths2015rational, sanborn2016bayesian}. Four, people are unable to learn context-specific distributions if they do not have any prior knowledge about the relative mean positions of these context categories. And in such a case even after being exposed to multiple labelled exemplars, their behaviour is random in nature due to lack of correct posterior distributions.
 
-Our work also demonstrates quite clearly that, whether people are able to incidentally learn distributions corresponding to real-world situations~\cite{hz84} or not~\cite{tvp17}, they can certainly learn enough about them well enough from as few as one sample per distribution to reason probabilistically about them, as presupposed by earlier work~\cite{griffiths2006optimal, stewart2006decision}. Interestingly, the prototype observer model shows excellent empirical fits with data across our three variance manipulations, even though the model itself gains no access to variance information. In short, incidental probability judgments are consistent with a `one-and-known' sampling heuristic supporting peoples' probabilistic causal inference. 
+Our work also demonstrates quite clearly that, whether people are able to incidentally learn distributions corresponding to real-world situations~\cite{hz84} or not~\cite{tvp17}, they can certainly learn enough about them well enough from as few as one sample per distribution to reason probabilistically about them, as presupposed by earlier work~\cite{griffiths2006optimal, stewart2006decision}. Interestingly, the prototype observer model shows good empirical fits with data across our three variance manipulations, even though the model itself gains no access to variance information. In short, incidental probability judgments are consistent with a `one-and-known' sampling heuristic supporting peoples' probabilistic causal inference. 
 
 Probabilistic accounts of cognition are sometimes questioned on grounds of neurobiological plausibility. Probabilistic population codes can potentially encode and enable reasoning over distributions corresponding to invariant or slow-changing priors and well-structured likelihoods~\cite{ma2006bayesian}. It is possible to model important elements of perceptual and motor tasks using such distributions, but not for cognitive tasks of the nature we consider in this paper. Flexible probabilistic reasoning in everyday cognition appears to require operations incongruent with the extent to which and timescales on which synaptic weights can change as a function of experience~\cite{malinow1988persistent}. Our results  offer a possible resolution for this problem - sampling a small number of observations from memory, is sufficient to tune a generic situation model, potentially learned over long experience, into expressing probabilistic judgments that closely match human behavior. 
 
